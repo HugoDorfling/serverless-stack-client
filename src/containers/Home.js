@@ -5,6 +5,7 @@ import { onError } from "../libs/errorLib";
 import "./Home.css";
 import { API } from "aws-amplify";
 import { LinkContainer } from "react-router-bootstrap";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [notes, setNotes] = useState([]);
@@ -67,6 +68,14 @@ const Home = () => {
       <div className="lander">
         <h1>Scratch</h1>
         <p>A simple note taking app</p>
+        <div>
+          <Link to="/login" className="btn btn-info btn-lg">
+            Login
+          </Link>
+          <Link to="/signup" className="btn btn-success btn-lg">
+            Sign Up
+          </Link>
+        </div>
       </div>
     );
   }
