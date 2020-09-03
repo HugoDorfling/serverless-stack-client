@@ -1,7 +1,7 @@
 const dev = {
     STRIPE_KEY: "pk_test_51HMaCHAPhAdztMm9IsnOKhgi2rOv0vvMFHgUNXBHe8wFEVumjrojE99hfraBARDVqM2XynsE6rAqqFUMYH2supDZ00E2ML7MRG",
     s3: {
-        REGION: "us-east-1",
+        REGION: "us-east-2",
         BUCKET: "notes-app-2-api-dev-attachmentsbucket-1adyalf9bkwx",
     },
     apiGateway: {
@@ -19,7 +19,7 @@ const dev = {
 const prod = {
     STRIPE_KEY: "pk_test_51HMaCHAPhAdztMm9IsnOKhgi2rOv0vvMFHgUNXBHe8wFEVumjrojE99hfraBARDVqM2XynsE6rAqqFUMYH2supDZ00E2ML7MRG",
     s3: {
-        REGION: "us-east-1",
+        REGION: "us-east-2",
         BUCKET: "notes-app-2-api-prod-attachmentsbucket-1k4i2x6ml2ugn",
     },
     apiGateway: {
