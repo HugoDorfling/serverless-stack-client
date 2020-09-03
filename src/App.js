@@ -39,12 +39,12 @@ function App() {
     return (
       !isAuthenticating &&
       <div className="App container">
-        <Navbar collapseOnSelect expand="md">
+        <Navbar collapseOnSelect expand="md" animation="false">
           <Navbar.Brand>
             <Link to="/">Scratch</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" animation="false">
             <Nav className="ml-auto">
               {isAuthenticated
                 ? <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
