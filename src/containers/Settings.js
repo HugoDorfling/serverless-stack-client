@@ -15,7 +15,7 @@ export default function Settings() {
 
     useEffect(() => {
         setStripe(window.Stripe(config.STRIPE_KEY));
-    })
+    }, [])
 
     function billUser(details) {
         return API.post("notes", "/billing", {
