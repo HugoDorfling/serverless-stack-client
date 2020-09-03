@@ -47,7 +47,14 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav" animation="false">
             <Nav className="ml-auto">
               {isAuthenticated
-                ? <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
+                ? (
+                  <>
+                <LinkContainer to="/settings">
+                  <Nav.Link>Settings</Nav.Link>
+                </LinkContainer>
+                <Nav.Link onClick={handleLogout}>Logout</Nav.Link> 
+                </>
+                )
                 : <>
                     <LinkContainer to="/signup">
                       <Nav.Link className="p-3">Sign Up</Nav.Link>
