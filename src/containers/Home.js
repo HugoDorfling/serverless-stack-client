@@ -35,7 +35,7 @@ const Home = () => {
     return function cleanup() {
       mounted = false;
     }
-  },);
+  },[isAuthenticated]);
 
   function loadNotes() {
     return API.get("notes", "/notes");
