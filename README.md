@@ -1,3 +1,6 @@
+# Preview
+[Check it out Live](https://serverless-notes-by-hugo.netlify.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
